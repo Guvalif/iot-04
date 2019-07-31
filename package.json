@@ -1,0 +1,28 @@
+{
+  "name": "iot-02_v2",
+  "version": "0.0.0",
+  "description": "AIDOR ACCELERATION - Cloud Application Part, Sample Program",
+  "scripts": {
+    "deploy": "firebase deploy --only hosting",
+    "login": "firebase login --interactive",
+    "logout": "firebase logout"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guvalif/iot-02_v2.git"
+  },
+  "author": "Kazuyuki TAKASE",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Guvalif/iot-02_v2/issues"
+  },
+  "homepage": "https://github.com/Guvalif/iot-02_v2#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "rxjs": "^6.5.2",
+    "serialport": "^7.1.5"
+  },
+  "devDependencies": {
+    "firebase-tools": "^7.2.2"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sensor Data Visualizer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="author" content="Kazuyuki TAKASE">
+  <meta name="copyright" content="PLEN Project Company Inc, and all authors.">
+
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+  <script>
+    firebase.initializeApp({
+      apiKey: "<API_KEY>",
+      authDomain: "<AUTH_DOMAIN>",
+      databaseURL: "<DATABASE_URL>",
+      projectId: "<PROJECT_ID>",
+      messagingSenderId: "MESSAGING_SENDER_ID",
+      appId: "<APP_ID>"
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+  <script src="./app.js"></script>
+</head>
+
+<body>
+  <div id="application">
+    <svg v-bind:width="w" v-bind:height="h">
+      <polyline fill="none" stroke="#793" v-bind:points="points"></polyline>
+    </svg>
+  </div>
+</body>
+
+</html>
