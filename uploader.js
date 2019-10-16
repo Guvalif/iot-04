@@ -15,8 +15,9 @@ function connectDevicePromise()
         {
             if (ports.length > 0)
             {
-                let serial = new SerialPort(ports[0].comName, { baudRate: 115200 }, e => {});
-                let parser = serial.pipe(new ReadLine({ delimiter: '\n' }));
+                const id = ports.findIndex(x => x.manufacturer === 'mbed');
+                const serial = new SerialPort(ports[id].comName, { baudRate: 115200 }, e => {});
+                const parser = serial.pipe(new ReadLine({ delimiter: '\n' }));
 
                 return Promise.resolve(parser);
             }

@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () =>
             return {
                 w: 500,
                 h: 512,
-                points: ''
+                points: '',
+                comment: ''
             };
         },
         created()
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () =>
                 {
                     if (snapshot.exists())
                     {
-                        this.points = Object.values(snapshot.val())
+                        /* this.points = */ Object.values(snapshot.val())
                             .map((x, i) => `${i * 10},${(x['x'] + 2048) * 0.125}`)
                             .join(' ');
                     }
