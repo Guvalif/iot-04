@@ -1,9 +1,18 @@
-AIDOR ACCELERATION「クラウドアプリケーション編」| サンプルプログラム
+IoTプロトタイピングワークショップ「クラウドアプリケーション編」| サンプルプログラム
 ===============================================================================
 
-**[WIP]**
+What's This?
+-------------------------------------------------------------------------------
 
-環境構築手順
+IoTプロトタイピングワークショップ「クラウドアプリケーション編」で使用したサンプルプログラムです。
+
+### 実施実績
+
+- 2019/MM/DD: IoT・ロボットビジネス創出プログラム「[AIDOR ACCELERATION](https://teqs.jp/acceleration)」第1ターム 基礎知識講座 第3回
+- 2019/10/16: IoT・ロボットビジネス創出プログラム「[AIDOR ACCELERATION](https://teqs.jp/acceleration)」第2ターム 基礎知識講座 第3回
+
+
+Getting Started
 -------------------------------------------------------------------------------
 
 1. [Node.js](https://nodejs.org/ja/)をダウンロードし、インストーラの指示に従ってセットアップを行います
@@ -21,7 +30,8 @@ AIDOR ACCELERATION「クラウドアプリケーション編」| サンプルプ
       (1つのPCで1つのGoogleアカウントへしかログインできないため、切り替えが必要な場合はログアウトをする)
     - `npm run deploy` : Firebase HostingへのWebアプリのアップロード
 
-ファイル一覧 (ハンズオンで使用するもののみ)
+
+Directory & File Structure
 -------------------------------------------------------------------------------
 
 - `/public/` : Firebase HostingにアップロードしたいHTML/CSS/JavaScriptを収める
@@ -30,3 +40,12 @@ AIDOR ACCELERATION「クラウドアプリケーション編」| サンプルプ
 - `.firebaserc` : Firebase Hostingの設定ファイル
 - `logger.py` : micro:bitに書き込むJSON出力プログラム
 - `uploader.js` : micro:bitからの出力をFirebaseにアップロードするプログラム
+
+
+Copyright (c) 2019,
+-------------------------------------------------------------------------------
+
+- [PLEN Project Company Inc.](https://plen.jp)
+- [Kazuyuki TAKASE](https://github.com/Guvalif)
+
+This software is released under [the MIT License](http://opensource.org/licenses/mit-license.php).
